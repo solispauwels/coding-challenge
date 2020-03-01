@@ -1,0 +1,97 @@
+@import "../themes/default";
+
+@import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/list/mdc-list";
+
+.mdc-list--avatar-list{
+  @include mdc-list-item-graphic-fill-color(#ccc);
+  @include mdc-list-item-graphic-ink-color(#fff);
+}
+
+.mdc-button {
+  margin: 0 0 0 5px;
+  font-size: 13px;
+}
+.mdc-button-shaped {
+  border-radius: 18px !important;
+}
+
+.mdc-list-item__meta {
+  white-space: nowrap;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.mdc-chip {
+  font-size: 11px;
+  height: 18px;
+  margin: 0 5px 0 0;
+
+  &.OPEN {
+    background: #fbc02d;
+  }
+
+  &.RESOLVED {
+    background: #689f38;
+  }
+
+  &.BLOCKED {
+    background: #b71c1c;
+  }
+
+  &.SPAM {
+    background: #d32f2f;
+  }
+
+  &.VIOLATES_POLICIES {
+    background: #f57c00;
+  }
+
+  &.INFRINGES_PROPERTY {
+    background: #e64a19;
+  }
+
+  &.ARTICLE {
+    background: #ba68c8;
+  }
+
+  &.POST {
+    background: #f06292;
+  }
+
+  &.REPLY {
+    background: #7986cb;
+  }
+}
+
+.mdc-tab-bar {
+  margin: 0;
+}
+
+.mdc-top-app-bar__section.mdc-top-app-bar__section--align-start {
+  padding: 0;
+}
+
+.mdc-tab {
+  min-height: 64px;
+  @media (max-width: 599px) {
+    min-height: 56px;
+  }
+  @media (max-width: 599px) {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 12px;
+    font-size: 10px;
+  }
+}
+
+.mdc-top-app-bar__navigation-icon {
+  margin: 0 5px 0 15px;
+  cursor: pointer;
+}

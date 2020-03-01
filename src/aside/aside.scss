@@ -1,0 +1,29 @@
+@import "../themes/default";
+
+@import "@material/drawer/mdc-drawer";
+@import "@material/form-field/mdc-form-field.scss";
+@import "@material/radio/mdc-radio.scss";
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  padding: 20px 30px;
+  overflow: auto;
+  height: 100%;
+
+  @media (max-width: 900px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 599px) {
+    padding: 10px;
+  }
+}
+
+.app-bar {
+  position: absolute;
+}

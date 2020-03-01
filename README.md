@@ -1,3 +1,26 @@
+# Solution of Jorge Solis Pauwels
+
+In order to run my solution you have to execute the following commands:
+
+```
+npm install
+npm run build
+node index.js
+```
+
+Then you can check the front-end at **http://localhost:8080**.
+
+The back-end runs at **http://localhost:3333** with The following rest API paths:
+
+ - GET http://localhost:3333/reports *the list of reports*
+ - GET http://localhost:3333/reports/{state} *The list of reports filtered by the state as blocked in order to be used in other applications*
+ - GET http://localhost:3333/blocked *A simple list containing the IDs of the blocked reources, easier to use then the previous path*
+ - PUT http://localhost:3333/reports/{id} *The path in order to edit the report's state*
+
+I have develop and test this with **node v10.19.0** and npm **npm v6.13.4**
+
+---
+
 # Example Full-Stack Challenge
 
 We're excited that you're interested in performing the coding challenge.
@@ -5,7 +28,7 @@ The purpose of this test is to see how you approach problems as well as to evalu
 
 ## Challenge description
 
-This challenge imagines that we have a social media platform that is under attack from spam. We have implemented a reporting system for users that lets them report spam to the platform, and our spam protection team.  
+This challenge imagines that we have a social media platform that is under attack from spam. We have implemented a reporting system for users that lets them report spam to the platform, and our spam protection team.
 
 The challenge is to create a small full stack application for our spam protection team that consists of a server and a web based UI in order to manage reported content.
 

@@ -1,0 +1,40 @@
+@import "../themes/default";
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button/mdc-icon-button";
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
+
+  input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 -12px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 25px;
+    z-index: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .mdc-top-app-bar__section--align-end {
+    .mdc-top-app-bar__action-item {
+      z-index: 2;
+    }
+  }
+
+  .mdc-top-app-bar__navigation-icon {
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 900px) {
+    width: calc(100% - 255px) !important;
+  }
+}
