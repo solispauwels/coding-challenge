@@ -14,10 +14,14 @@ The back-end runs at **http://localhost:3333** with The following rest API paths
 
  - GET http://localhost:3333/reports *the list of reports*
  - GET http://localhost:3333/reports/{state} *The list of reports filtered by the state as blocked in order to be used in other applications*
- - GET http://localhost:3333/blocked *A simple list containing the IDs of the blocked reources, easier to use then the previous path*
+ - GET http://localhost:3333/blocked *A simple list containing the IDs of the blocked resources, easier to use then the previous path*
  - PUT http://localhost:3333/reports/{id} *The path in order to edit the report's state*
 
 I have develop and test this with **node v10.19.0** and npm **npm v6.13.4**
+
+## Note
+
+I took the liberty to change the report state from **OPEN/CLOSED** to **OPEN/RESOLVED/BLOCKED** as that we can distinguish what is the actual real state of the report, otherwise we cannot know which one is blocked without creating another separated list.
 
 ---
 
